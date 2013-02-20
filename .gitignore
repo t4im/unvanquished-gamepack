@@ -1,0 +1,23 @@
+# use 'git ls-files -i --exclude-standard' for checking
+# which already committed files are matched against these rules
+
+*~
+*.DS_Store
+
+#ignore editor temporary files
+.*.swp
+.#*
+
+#ignore patch-generated
+*.orig
+*.rej
+
+#ignore eclipse cdt project files
+.project
+.cproject
+.settings/
+
+#never ignore these in subdirectories by accident
+!.gitattributes
+!.gitignore
+
